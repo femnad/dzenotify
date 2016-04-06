@@ -21,4 +21,4 @@ height=$(expr $Y_MARGIN '+' $half_margin)
 x_margin=$(expr $half_margin '+' $width)
 geometry="${width}x${height}-${x_margin}+${Y_MARGIN}"
 
-echo "$summary: $body" | nohup dzen2 -p 5 -geometry $geometry -xs 1 &>/dev/null &
+echo "^fg(green)$summary: ^fg(white)$body" | nohup dzen2 -p 5 -geometry $geometry -xs 1 &>/dev/null &
